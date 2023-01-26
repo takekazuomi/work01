@@ -14,7 +14,7 @@ var credential = new DefaultAzureCredential(new DefaultAzureCredentialOptions { 
 var token = credential.GetToken(new Azure.Core.TokenRequestContext(new[] { "https://ossrdbms-aad.database.windows.net" }));
 
 // Set MySQL user depending on the environment
-string user = "mysql-v2-playground-admin@mysql-mhv2-m4hf2peroh2ja";
+string user = "mhv2-appservice@mysql-mhv2-m4hf2peroh2ja";
 
 // Add the token to the MySQL connection
 var connectionString = "Server=mysql-mhv2-m4hf2peroh2ja.mysql.database.azure.com;" + 
