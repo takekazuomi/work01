@@ -4,6 +4,8 @@ using Azure.Core.Diagnostics;
 // logging
 using AzureEventSourceListener listener = AzureEventSourceListener.CreateConsoleLogger();
 
+Console.WriteLine("MSI_ENDPOINT: "+ System.Environment.GetEnvironmentVariable("MSI_ENDPOINT"));
+
 // Uncomment one of the two lines depending on the identity type
 //var credential = new DefaultAzureCredential(); // system-assigned identity
 // 752adf6e-e235-452c-86de-612ac5964fbb rg-mhv2-playground-capps-backend/id-mhv2-backend
